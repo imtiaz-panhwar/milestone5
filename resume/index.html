@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="resumeDiv">
+        <header>
+            <div>
+                <h1 class="white"><span id="name"></span></h1>
+                <p class="white"><span id="desig"></span></p>
+            </div>
+            <!-- Profile Image -->
+            <img id="profileImage" alt="Profile Picture" />
+        </header>
+
+        <div class="content">
+            <aside>
+                <!-- Contact Section -->
+                <section id="contact" class="contact">
+                    <h2>Contact</h2>    
+                    <p><strong>Phone:</strong> <span id="phone"></span></p>
+                    <p><strong>Email:</strong> <span id="email"></span></p>
+                    <p><strong>Address:</strong> <span id="add"></span></p>
+                </section>
+
+                <!-- Education Section -->
+                <section id="edu" class="education">
+                    <h2>Education</h2>  
+                    <p><strong><span id="pass1"></span></strong> - <span id="deg1"></span> at <span id="uni1"></span></p>
+                    <p><strong><span id="pass2"></span></strong> - <span id="deg2"></span> at <span id="uni2"></span></p>
+                </section>
+
+                <!-- Skills Section -->
+                <section id="skills" class="skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li><span id="skill1"></span></li>
+                        <li><span id="skill2"></span></li>
+                        <li><span id="skill3"></span></li>
+                    </ul>
+                </section>
+            </aside>
+
+            <main class="main-content">
+                <!-- Experience Section -->
+                <section id="experience" class="experience">
+                    <h2>Experience</h2>
+                    <p><strong>Company:</strong> <span id="company"></span> (<span id="styear"></span> - <span id="endyear"></span>)</p>
+                    <p><strong>Location:</strong> <span id="comlocation"></span></p>
+                    <p><strong>Job Title:</strong> <span id="jobtitle"></span></p>
+                    <ul>
+                        <li><span id="achv1"></span></li>
+                        <li><span id="achv2"></span></li>
+                        <li><span id="achv3"></span></li>
+                    </ul>
+                </section>
+
+                <!-- Languages Section -->
+                <section id="lang" class="languages">
+                    <h2>Languages</h2>
+                    <p><span id="lang1"></span></p>
+                    <p><span id="lang2"></span></p>
+                    <p><span id="lang3"></span></p>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <!-- Profile Picture Upload -->
+    <div>
+        <label for="pic">Upload Profile Picture:</label>
+        <input type="file" id="pic" accept="image/*" />
+    </div>
+
+    <div class="btnDiv">
+        <button id="print_btn" class="btn">Print</button>
+        <button id="edit_btn" class="btn">Edit</button>
+        <a id="anc" href=""><button id="share_btn" class="btn">Shareable link</button></a>
+        <button id="copy_btn" class="btn">Copy Link</button>
+    </div>
+
+    <script src="resume.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    background: rgb(233, 224, 230);
+}
+
+.resumeDiv{
+    width: 80%;
+    border: 2px solid rgb(177, 37, 158);
+    border-radius: 30px;
+    overflow: hidden;
+ }
+
+header{
+
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background:linear-gradient(rgba(91, 7, 53, 0.63), rgba(230, 144, 212, 0.64));
+    margin-bottom: 20px;
+}
+
+.white{
+    color: white;
+}
+header img{
+width: 160px;
+height: 150px;
+border-radius: 50%;
+
+
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    
+}
+
+.content aside{
+    width: 30%;
+    padding-left: 40px;
+    padding-bottom: 50px;
+    background: rgb(216, 197, 213);
+}
+.contact h2, .education h2, .skills h2, .languages h2, .experience h2, .refrence h2{
+    border-bottom: 2px solid rgb(249, 48, 182);
+    margin-bottom: 20px;
+    padding-bottom: 3px;
+    color:rgb(249, 48, 182);
+}
+
+.contact, .education,  .skills,.languages  .experience, .refrence{
+    margin-bottom: 30px;
+    
+}
+
+.skills ul{
+    margin-left: 18px;
+}
+
+.main-content{
+    padding-left: 50px;
+    width: 70%;
+    background-color: white;
+}
+
+.experience-items{
+    margin-bottom: 15px;
+}
+
+.experience-items p{
+    margin-bottom: 5px;
+}
+
+.experience-items ul{
+margin-left: 18px;
+margin-top: 15px;
+}
+
+.btnDiv{
+
+  width: 70%;
+  padding: 2%;
+  display: flex;
+  justify-content: space-evenly; 
+  align-items: center;
+  margin-top: 30px;
+}
+
+.btn{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 14px;
+    border-radius: 7px;
+    color: white;
+    background:rgb(48, 215, 249);
+    cursor: pointer;
+    &:hover{
+        background: rgb(37, 171, 198);
+    }
+
+    &:active{
+        transform: scale(0.95);
+    }
+}
+
+.hide{
+    display: none;
+}
+
+
+@media print{   
+    .btnDiv{
+    display: none ;
+}}
+
+
+@media(max-width: 786px){
+    .content{
+        flex-direction:column ;
+    }
+    .aside,.main-content{
+        width: 100%;
+    }
+}
